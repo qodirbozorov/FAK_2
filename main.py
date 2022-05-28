@@ -23,7 +23,7 @@ def name_checker(update, context):
   text = update.message.text
   for i in data:
     if text.lower() in i["Toliq ismi"].lower():
-      update.message.reply_html(f"👤 <b>To‘liq ismi:</> <i>  {i['Toliq ismi'].title()}</i> \n \n | 👥 <b>Guruh:</b> <i>{i['Guruh']}</i> \n | 📍 <b>Manzil: </b>  {i['Viloyat']} {i['Tuman']} \n | 🎂 <b>Tug‘ilgan sanasi:</b>  <i> {i['Tugilgan sana']}</i> \n | ℹ️ <b>Fuqaroligi: </b> {i['Fuqarolik']}, \n")
+      update.message.reply_html(f"👤 <b>To‘liq ismi:</> <i>  {i['Toliq ismi'].title()}</i> \n \n | 👥 <b>Guruh:</b> <i>{i['Guruh']}</i> \n | 📍 <b>Manzil: </b>  {i['Viloyat']} {i['Tuman']} \n | 🎂 <b>Tug‘ilgan sanasi:</b>  <i> {i['Tugilgan sana']}</i> \n | ℹ️ <b>Fuqaroligi: </b> {i['Fuqarolik']}, \n \n @faculty_cognitobot")
 
 
 def checker():
